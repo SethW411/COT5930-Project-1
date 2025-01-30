@@ -6,15 +6,15 @@
 <body>
     <h1>Upload an Image</h1>
     <form action="/upload" method="POST" enctype="multipart/form-data">
-        <input type="file" name="file">
+        <input type="file" name="form_file">
         <input type="submit" value="Upload">
-    </form>
+    </form>        
 
     <h2>Uploaded Images</h2>
     <ul>
         {% for image in images %}
-            <li><img src="{{ image }}" width="200"></li>
+            <li><img src="{{ image }}" alt="Uploaded Image" width="200"></li>
         {% endfor %}
-    </ul>
+    </ul>       
 </body>
 </html>
